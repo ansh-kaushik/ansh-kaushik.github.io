@@ -1,0 +1,136 @@
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* variables */
+:root {
+  --primary: #ffffff;
+  --secondary: #e7e5e3;
+}
+/* fonts */
+@font-face {
+  font-family: 'open-sans';
+  src: url(/assets/fonts/OpenSans-Regular.ttf);
+}
+body {
+  overflow-x: hidden;
+  background-color: #121213;
+  font-size: 16px;
+  font-family: open-sans;
+}
+/*  base styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+}
+.nav-list {
+  display: none;
+}
+.welcome {
+  margin: 30px 15px;
+}
+.welcome h1 {
+  font-size: 2em;
+  margin: 0 auto;
+  line-height: 1.5em;
+  color: var(--primary);
+}
+.welcome-text {
+  grid-column: 1/5;
+  /* background-color: red; */
+}
+.welcome-img {
+  grid-column: 5/9;
+}
+
+#projects,
+#contact,
+#skills {
+  margin: 30px 10px;
+  border-radius: 5px;
+  background: #16181b;
+}
+#projects h3,
+#contact h3,
+#skills h3 {
+  padding: 20px 0;
+  margin: 10px 0;
+  text-align: center;
+  color: var(--secondary);
+  background: #6d6a5e;
+}
+#projects li {
+  grid-column: 1/9;
+  /* grid-column: 2/8; */
+  padding: 10px 0;
+}
+#projects li a {
+  display: flex;
+  color: var(--primary);
+}
+#projects li img {
+  background-size: cover;
+  width: 20%;
+  height: 70%;
+  padding: 10px 30px;
+}
+#projects h4 {
+  padding-top: 20px;
+}
+
+#projects li:hover {
+  background: #262625;
+}
+#skills li {
+  grid-column: span 4;
+  grid-gap: 10px;
+  color: var(--primary);
+  padding: 20px 10px;
+  text-align: center;
+  background: #252525;
+}
+#contact form {
+  text-align: center;
+}
+
+#contact input,
+#contact textarea {
+  width: 90%;
+  height: 20px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1.1em;
+  background-color: #292626;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+}
+#contact textarea {
+  margin-bottom: 30px;
+}
+
+#contact .button {
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #292626;
+  border-radius: 40px;
+}
+
+#contact .button:hover {
+  cursor: pointer;
+  background-color: #121213;
+}
