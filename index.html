@@ -8,64 +8,68 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav class="main-nav">
+    <header class="header">
+      <div>
+        <img src="./assets/images/nav-bar.svg" class="toggle-button" alt="" />
+      </div>
+      <div class="main-nav">
         <ul class="nav-list">
           <li><a href="./html/index.html">Home </a></li>
           <li><a href="./html/about.html">About me </a></li>
-          <li><a href="./html/contact.html">Contact me </a></li>
+          <li><a href="#contact">Contact me </a></li>
           <li><a href="./html/porjects.html">Projects</a></li>
         </ul>
-      </nav>
-      <main>
-        <div class="grid welcome">
-          <h1 class="welcome-text">Hi, I am Ansh Kaushik, Web Developer.</h1>
-          <div class="welcome-img"></div>
-        </div>
-      </main>
-
-      <section id="projects">
-        <h3>Some of my Projects</h3>
-        <ul class="grid">
-          <li>
-            <a href="#">
-              <img src="./assets/images/project1_cover.png" alt="" />
-              <h4>Music-player</h4>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/mait-hostel/main">
-              <img src="./assets/images/indexBackgound.jpg" alt="" />
-              <h4>Mait-Hostel</h4>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./assets/images/indexBackgound.jpg" alt="" />
-              <h4>Webiste</h4>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section id="skills">
-        <h3>Things i can do</h3>
-        <ul class="grid">
-          <li><h4>Javascript</h4></li>
-          <li><h4>NodeJS</h4></li>
-          <li><h4>C++</h4></li>
-          <li><h4>MongoDB</h4></li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h3>Get in Touch</h3>
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Your Message"></textarea>
-          <button class="button">Send</button>
-        </form>
-      </section>
+      </div>
     </header>
+    <main>
+      <div class="grid welcome">
+        <h1 class="welcome-text">Hi, I am Ansh Kaushik, Web Developer.</h1>
+        <div class="welcome-img"></div>
+      </div>
+    </main>
+
+    <section id="projects">
+      <h3>Some of my Projects</h3>
+      <ul class="grid">
+        <li>
+          <a href="https://github.com/ansh-kaushik/music-player">
+            <img src="./assets/images/project1_cover.png" alt="" />
+            <h4>Music-player</h4>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mait-hostel/main">
+            <img src="./assets/images/indexBackgound.jpg" alt="" />
+            <h4>Mait-Hostel</h4>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./assets/images/indexBackgound.jpg" alt="" />
+            <h4>Webiste</h4>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h3>Things i can do</h3>
+      <ul class="grid">
+        <li><h4>Javascript</h4></li>
+        <li><h4>NodeJS</h4></li>
+        <li><h4>C++</h4></li>
+        <li><h4>MongoDB</h4></li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h3>Get in Touch</h3>
+      <form>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button class="button">Send</button>
+      </form>
+    </section>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
