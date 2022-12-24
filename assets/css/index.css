@@ -28,6 +28,9 @@ body {
   font-size: 16px;
   font-family: open-sans;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 /*  base styles */
 
 .grid {
@@ -53,8 +56,9 @@ header img {
 }
 
 .main-nav {
+  /* box-sizing: border-box; */
+
   position: fixed;
-  padding-top: 30px;
   left: -50%;
   top: 0;
   height: 100%;
@@ -68,7 +72,15 @@ header img {
 .main-nav.active {
   transition: left 0.14s ease-in;
   left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* imp property to not scroll the body or behind, when the sidebar scroll reaches end  */
+  overscroll-behavior: contain;
   opacity: 1;
+}
+/* imp property to not display scrollbar */
+.main-nav.active::-webkit-scrollbar {
+  display: none;
 }
 
 .main-nav li a {
@@ -173,38 +185,4 @@ header img {
   padding: 20px 10px;
   text-align: center;
   background: #252525;
-}
-#contact form {
-  text-align: center;
-}
-
-#contact input,
-#contact textarea {
-  width: 90%;
-  height: 20px;
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 1.1em;
-  background-color: #292626;
-  border: 2px solid #fff;
-  border-radius: 40px;
-  color: #fff;
-}
-#contact textarea {
-  margin-bottom: 30px;
-}
-
-#contact .button {
-  padding: 10px 30px;
-  margin-bottom: 20px;
-  font-size: 1.1em;
-  border: 2px solid #fff;
-  color: #fff;
-  background-color: #292626;
-  border-radius: 40px;
-}
-
-#contact .button:hover {
-  cursor: pointer;
-  background-color: #121213;
 }

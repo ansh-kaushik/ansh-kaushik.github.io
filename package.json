@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is a portfolio website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ansh-kaushik/portfolio.git"
+  },
+  "author": "ansh-kaushik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ansh-kaushik/portfolio/issues"
+  },
+  "homepage": "https://github.com/ansh-kaushik/portfolio#readme"
+}
