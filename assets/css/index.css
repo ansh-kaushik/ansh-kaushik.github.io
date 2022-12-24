@@ -74,6 +74,7 @@ header img {
 .main-nav.active {
   transition: left 0.14s ease-in;
   left: 0;
+  padding-top: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
   /* imp property to not scroll the body or behind, when the sidebar scroll reaches end  */
@@ -200,16 +201,14 @@ header img {
   grid-column: 2/4;
 }
 .linkedin img {
+  box-sizing: border-box;
   width: 60%;
   height: 60%;
-  background: #ffff;
-  border-radius: 50px;
+  background: none;
+  /* padding: 0; */
+  border-radius: 10px;
 }
-.linkedin img:hover {
-  background-color: #5090e3;
 
-  transition: background-color 0.2s, opacity 0.2s ease-in;
-}
 .github-icon {
   grid-column: 4/6;
 }

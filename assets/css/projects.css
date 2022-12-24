@@ -111,3 +111,69 @@ header img {
 .main-nav li:hover {
   background: #2d2d2d;
 }
+#main-container {
+  margin: 30px 10px;
+  border-radius: 6px;
+  background: #16181b;
+}
+
+#main-container h2 {
+  color: var(--primary);
+  background: #162330;
+  padding: 20px 0;
+  margin: 10px 0;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.top-div {
+  grid-column: span 12;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.projects.grid {
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0;
+  padding: 0 10px;
+}
+.project {
+  border-radius: 2px;
+  grid-column: span 12;
+  color: rgb(221, 221, 221);
+  padding: 20px 10px;
+  margin: 10px 0;
+  text-align: center;
+  background: #252525;
+}
+.project h4 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.top-div img {
+  width: 25%;
+}
+
+.project .body {
+  grid-column: span 12;
+  padding-top: 30px;
+  line-height: 30px;
+  color: #aeaaaa;
+}
+.body div {
+  color: var(--primary);
+  margin: 20px 0;
+  padding: 10px 0;
+  border-radius: 50px;
+  background-color: #3b3b35;
+}
+
+.body div:hover {
+  background: #454541;
+}
