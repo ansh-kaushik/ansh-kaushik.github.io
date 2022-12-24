@@ -1,0 +1,113 @@
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* variables */
+:root {
+  --primary: #ffffff;
+  --secondary: #e7e5e3;
+}
+/* fonts */
+@font-face {
+  font-family: 'open-sans';
+  src: url(/assets/fonts/OpenSans-Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  background-color: #121213;
+  font-size: 16px;
+  font-family: open-sans;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/*  base styles */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+}
+header {
+  position: sticky;
+  top: 0;
+  height: 100%;
+}
+header img {
+  width: 15%;
+  margin: 10px;
+  box-shadow: 2px;
+  border-radius: 10px;
+}
+.nav-list a {
+  color: #ffffff;
+  display: inline-block;
+  width: 100%;
+}
+
+.main-nav {
+  /* box-sizing: border-box; */
+
+  position: fixed;
+  left: -50%;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #252424;
+
+  transition: left 0.17s ease-in;
+}
+
+.main-nav.active {
+  transition: left 0.14s ease-in;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* imp property to not scroll the body or behind, when the sidebar scroll reaches end  */
+  overscroll-behavior: contain;
+  opacity: 1;
+}
+/* imp property to not display scrollbar */
+.main-nav.active::-webkit-scrollbar {
+  display: none;
+}
+
+.main-nav li a {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  /* padding: 15px 0; */
+  height: 50px;
+
+  /* margin: 10px 0; */
+  /* line-height: 10px; */
+}
+
+.toggle-button {
+  top: 5px;
+  /* translate: rotateZ(0); */
+  /*transition: transform 0.4s ease-in-out; */
+}
+.toggle-button:hover {
+  /* transform: rotateZ(90deg);
+    transition: transform 2s ease-in-out; */
+  cursor: pointer;
+}
+.main-nav li:hover {
+  background: #2d2d2d;
+}
