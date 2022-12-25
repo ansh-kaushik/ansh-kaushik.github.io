@@ -232,3 +232,107 @@ header img {
 .gmail-icon img:hover {
   transition: opacity 0.2s ease-in;
 }
+.last-one {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+  header {
+    position: static;
+  }
+  .main-nav {
+    width: 15%;
+    transition: left 1s ease-out;
+  }
+  .main-nav.active {
+    transition: left 0.44s ease;
+  }
+  .welcome h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+  #projects {
+    margin: 0;
+    padding: 40px 0;
+  }
+  #skills {
+    margin: 0;
+    padding: 20px 0;
+  }
+  #projects h3,
+  #skills h3 {
+    width: 40%;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 20px 0;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background: none;
+  }
+  #projects ul.grid {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  #projects li a {
+    text-align: center;
+    display: block;
+  }
+  #projects li:nth-child(1) {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  #projects li:nth-child(2) {
+    grid-column: 4/6;
+    grid-row: 2/3;
+  }
+  #projects li:nth-child(3) {
+    grid-column: 6/8;
+    grid-row: 1/2;
+  }
+  #projects li a h4 {
+    font-size: 20px;
+  }
+  #skills ul {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #skills li:nth-child(1) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  #skills li:nth-child(2) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  #skills li:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 5/6;
+  }
+  #skills li:nth-child(4) {
+    grid-column: 6/7;
+    grid-row: 1/2;
+  }
+  #contact {
+    margin: 0;
+    padding-top: 60px;
+    display: flex;
+    justify-content: end;
+  }
+  #contact .first-one {
+    display: none;
+  }
+  #contact .last-one {
+    display: block;
+    background: none;
+  }
+  .socials {
+    width: 20%;
+  }
+  #contact img:hover {
+    opacity: 0.4;
+    transition: opacity 0.4s ease;
+  }
+}
